@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        textarea[name="msg"],
+        input[name="name"] {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="txt"></div>
+<h1>🤍❤️🤍</h1>
+<form action="" method="post">
+    <textarea name="msg" id="msg"></textarea>
+    <input type="text" name="name">
+    <input type="button" value="Ok">
+</form>
+<script>
+    document.getElementById("msg").addEventListener("keyup", function () {
+        event.target.value = event.target.value
+            .replace(/:\)|:-\)/g, "🙂")
+            .replace(/:\(|:-\)/g, "😥")
+            .replace(/ЖЫВЕ БЕЛАРУСЬ|жыве беларусь/g, "🤍❤️🤍")
+            .replace(/красное сердце/g, "❤️")
+            .replace(/белое сердце/g, "🤍");
+    });
+</script>
+
+</body>
+</html>
