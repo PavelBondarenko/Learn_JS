@@ -20,15 +20,8 @@
     <input type="text" name="name">
     <input type="button" value="Ok">
 </form>
-<script>
-    document.getElementById("msg").addEventListener("keyup", function () {
-        event.target.value = event.target.value
-            .replace(/:\)|:-\)/g, "🙂")
-            .replace(/:\(|:-\)/g, "😥")
-            .replace(/ЖЫВЕ БЕЛАРУСЬ|жыве беларусь/g, "🤍❤️🤍")
-            .replace(/красное сердце/g, "❤️")
-            .replace(/белое сердце/g, "🤍");
-    });
+<script src="parse.js">
+
 </script>
 
 </body>
